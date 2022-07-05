@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 39.75rem;
+  margin: 10.25rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .grid-container {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 19.875rem 19.875rem;
+      grid-template-columns: 19.875rem 19.875rem;
+}
+
+main .grid-container div {
+  padding: 2.075rem 2.5rem 2.5rem;
+}
+
+main .grid-container div h2 {
+  font-size: 1.1rem !important;
+}
+
+main .grid-container .item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  background-color: white;
+}
+
+main .grid-container .item-1 h1 {
+  color: #2ab2af;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .grid-container .item-1 h2 {
+  color: #c0df34;
+  margin-bottom: 0.5rem;
+}
+
+main .grid-container .item-1 p {
+  color: #98a6bd;
+}
+
+main .grid-container .item-2 {
+  width: 19.875rem;
+  background-color: #2ab2af;
+}
+
+main .grid-container .item-2 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0 0;
+}
+
+main .grid-container .item-2 .price .num {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 0.5rem;
+}
+
+main .grid-container .item-2 .price .str {
+  font-weight: 400;
+  color: var(#e5eff5);
+  opacity: 0.6;
+  letter-spacing: 0.02em;
+}
+
+main .grid-container .item-2 .sub-para {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.015em;
+}
+
+main .grid-container .item-2 a {
+  display: block;
+  background-color: #c0df34;
+  color: white;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+main .grid-container .item-3 {
+  width: 19.875rem;
+  background-color: #51bdbb;
+}
+
+main .grid-container .item-3 h2 {
+  color: #e5eff5;
+}
+
+main .grid-container .item-3 ul {
+  padding-top: 0.75rem;
+  list-style-type: none;
+  color: #e5eff5;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+main .grid-container .item-3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer Section */
+footer {
+  padding-bottom: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #98a6bd;
+}
+
+.attribution a {
+  color: #2ab2af;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+  main {
+    max-width: 83%;
+    margin: 4.5rem auto;
+  }
+  main .grid-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  main .grid-container div {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  main .grid-container .item-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+  }
+  main .grid-container .item-1 h2 {
+    font-size: 0.85rem;
+  }
+  main .grid-container .item-2 {
+    width: 100%;
+  }
+  main .grid-container .item-3 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
